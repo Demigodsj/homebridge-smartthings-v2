@@ -216,7 +216,7 @@ def defineDevicesPage() {
         }
         section("Thermostats") {
             input "tstatList", "capability.thermostat", title: "Thermostats: (${tstatList ? tstatList?.size() : 0} Selected)", multiple: true, submitOnChange: true, required: false, image: getAppImg("thermostat")
-            input "tstatHeatList", "capability.thermostat", title: "Heat Only Thermostats: (${tstatHeatList ? tstatHeatList?.size() : 0} Selected)", multiple: true, submitOnChange: true, required: false, image: getAppImg("thermostat")
+            input "tstatHeatList", "capability.thermostatMode", title: "Heat Only Thermostats: (${tstatHeatList ? tstatHeatList?.size() : 0} Selected)", multiple: true, submitOnChange: true, required: false, image: getAppImg("thermostat")
         }
     }
 }
